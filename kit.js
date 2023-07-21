@@ -27,3 +27,7 @@ function writeToC(classdoxr, content) {
 function style(id, styletype, stylevalue) {
   element(id).style.styletype = stylevalue;
 }
+
+function styleC(classdoxr, styletype, stylevalue) {
+  elementC(classdoxr).style.styletype = stylevalue;
+}
