@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toolkit docs</title>
+    <script src="//cdn.jsdelivr.net/npm/eruda" onload="eruda.init();"></script>
+    <link href="https://replitcss.hecker40.repl.co/replit.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="text-glow">Doxr Toolkit Documentation</h1>
+        <p>This is the doxr toolkit.
+<br><br>You can use it like this:<br><br><code>&lt;script src="https://toolkit.doxr.repl.co/kit.js"&gt;&lt;/script&gt;</code></p>
+      <p>This applies to mainly vanilla JS and it's to make Javascript easier. You will find types; SS stands for "Send Stuff;" it returns things but doesn't do anything by itself. Type DS stands for "Do Stuff;" it does stuff, and it's like a normal function that makes JS simpler.</p>
+      <hr>
+      <code>element(id)</code>
+      <p>The equivalent to <code>document.getElementById(id)</code>; this uses an element's ID to get an element. Regard the next function for classes.</p>
+      <hr>
+      <code>elementC(class)</code>
+      <p>The equivalent to <code>document.getElementByClassName(class)</code>; this uses an element's class to get an element.</p>
+      <hr>
+      <code>writeTo(id, content)</code>
+      <p>The equivalent to <code>document.getElementById(id).innerHTML = content</code>; this uses an element's ID to change it's content. The next function uses it's class instead.</p>
+      <hr>
+      <code>writeToC(class, content)</code>
+      <p>The equivalent to <code>document.getElementByClassName(class).innerHTML = content</code>; this uses an element's class to change it's content.</p>
+      <hr>
+      <code>style(id, styletype, stylevalue)</code>
+      <p>The equivalent to <code>document.getElementById(id).style.styletype = stylevalue</code>; this uses an element's ID to change it's style. <code>styletype</code> is what style is being changed and <code>stylevalue</code> is <code>styletype</code>'s value.</p>
+    </section>
+    <script src="https://replitcss.hecker40.repl.co/replit.js">
+    </script>
+        <div id="test" style="color: white;"></div>
+    <script src="https://toolkit.doxr.repl.co/kit.js"></script>
+  </body>
+</html>
