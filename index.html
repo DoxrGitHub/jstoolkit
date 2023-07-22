@@ -9,10 +9,12 @@
   </head>
   <body>
     <section class="container">
+              <div id="test" class="test" style="color: white;">By doxr</div>
       <h1 class="text-glow">Doxr Toolkit Documentation</h1>
         <p>This is the doxr toolkit.
-<br><br>You can use it like this:<br><br><code>&lt;script src="https://toolkit.js.org/kit.js"&gt;&lt;/script&gt;</code></p>
+<br><br>You can use it like this:<br><br><code>&lt;script src="https://cdn.jsdelivr.net/gh/DoxrGitHub/jstoolkit/kit.js"&gt;&lt;/script&gt;</code></p>
       <p>This applies to mainly vanilla JS and it's to make Javascript easier. You will find types; SS stands for "Send Stuff;" it returns things but doesn't do anything by itself. Type DS stands for "Do Stuff;" it does stuff, and it's like a normal function that makes JS simpler.</p>
+      <p>Note: when using the Class equivalents, all items with that class are affected.</p>
       <hr>
       <code>element(id)</code>
       <p>The equivalent to <code>document.getElementById(id)</code>; this uses an element's ID to get an element. Regard the next function for classes.</p>
@@ -24,14 +26,13 @@
       <p>The equivalent to <code>document.getElementById(id).innerHTML = content</code>; this uses an element's ID to change it's content. The next function uses it's class instead.</p>
       <hr>
       <code>writeToC(class, content)</code>
-      <p>The equivalent to <code>document.getElementByClassName(class).innerHTML = content</code>; this uses an element's class to change it's content.</p>
+      <p>The class version of <code>writeTo()</code>. This uses an element's class to change it's content.</p>
       <hr>
       <code>style(id, styletype, stylevalue)</code>
       <p>The equivalent to <code>document.getElementById(id).style.styletype = stylevalue</code>; this uses an element's ID to change it's style. <code>styletype</code> is what style is being changed and <code>stylevalue</code> is <code>styletype</code>'s value.</p>
     </section>
     <script src="https://replitcss.hecker40.repl.co/replit.js">
     </script>
-        <div id="test" style="color: white;"></div>
     <script src="https://toolkit.doxr.repl.co/kit.js"></script>
   </body>
 </html>

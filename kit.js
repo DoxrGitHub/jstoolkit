@@ -13,7 +13,7 @@ function element(id) {
 }
 
 function elementC(classdoxr) {
-  return document.getElementByClassName(classdoxr);
+  return document.getElementsByClassName(classdoxr);
 }
 
 function writeTo(id, content) {
@@ -21,7 +21,10 @@ function writeTo(id, content) {
 }
 
 function writeToC(classdoxr, content) {
-  elementC(classdoxr).innerHTML = content;
+  let elements = elementC(classdoxr);
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].innerHTML = content;
+  }
 }
 
 function style(id, styletype, stylevalue) {
@@ -29,5 +32,8 @@ function style(id, styletype, stylevalue) {
 }
 
 function styleC(classdoxr, styletype, stylevalue) {
-  elementC(classdoxr).style.styletype = stylevalue;
+  let elements = elementC(classdoxr);
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].style.styletype = stylevalue;
+  }
 }
