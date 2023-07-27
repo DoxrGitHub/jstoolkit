@@ -1,8 +1,8 @@
 /*
 
-This is the doxr toolkit. It has been made specifically for @doxr, but anyone can use it
+This is the doxr toolkit. Find information at 
 
-Documentation is also for doxr, in case he forgets.
+https://toolkit.js.org
 
 Licensed with the MIT license.
 
