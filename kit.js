@@ -37,3 +37,24 @@ function styleC(classdoxr, styletype, stylevalue) {
     elements[i].style.styletype = stylevalue;
   }
 }
+
+function addClass(id, className) {
+  element(id).classList.add(className);
+}
+
+function removeClass(id, className) {
+  element(id).classList.remove(className);
+}
+
+function toggleClass(id, className) {
+  element(id).classList.toggle(className);
+}
+
+function hide(id) {
+  
+}
+
+function show(id) {
+  
+}
+
